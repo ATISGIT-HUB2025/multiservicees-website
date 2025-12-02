@@ -147,7 +147,7 @@
                   <div class="main-header-one__bottom-left">
                     <div class="logo-one">
                       <a href="index.html" style="width: 200px"
-                        ><img src="assets/images/logo/7.png" alt="" width="10"
+                        ><img src="assets/images/logo/" alt="" width="10"
                       /></a>
                     </div>
                   </div>
@@ -1372,72 +1372,79 @@
                   <p>24/7 Support</p>
                 </div>
 
-                <form method="post" action="index.html">
-                  <div class="form-group">
-                    <input
-                      type="text"
-                      name="username"
-                      placeholder="Your Name"
-                      required=""
-                    />
-                  </div>
-                  <div class="form-group">
-                    <input
-                      type="email"
-                      placeholder="Email Address"
-                      value=""
-                      name="form_email"
-                      required=""
-                    />
-                  </div>
-                  <div class="form-group">
-                    <input
-                      type="text"
-                      name="phone"
-                      placeholder="Phone Number"
-                      required=""
-                    />
-                  </div>
-                  <div class="form-group">
-                    <select name="" id="" class="custom-select-box">
-                      <option value="0">Select Your Service</option>
-                      <option value="1">Security Services</option>
-                      <option value="2">Housekeeping services</option>
-                      <option value="3">Man Power Providing</option>
-                      <option value="4">Pest Control</option>
-                      <option value="5">Carpet Cleaning</option>
-                      <option value="6">Housekeeping Material Providing</option>
-                      <option value="6">Stationary Material Providing</option>
-                    </select>
-                  </div>
-                  <div class="form-group">
-                    <select name="" id="" class="custom-select-box">
-                      <option value="0">Select Your Sub Service</option>
-                      <option value="1">Housekeeper</option>
-                      <option value="2">Chamber</option>
-                      <option value="3">Maid</option>
-                      <option value="4">Office Boy</option>
-                      <option value="5">Pantry Boy</option>
-                      <option value="5">Pantry Girl</option>
-                      <option value="5">Technical</option>
-                      <option value="5">Non Technical Staff</option>
-                      <option value="5">Shampooing</option>
-                      <option value="5">Chemical</option>
-                      <option value="5">Machinary</option>
-                    </select>
-                  </div>
-                  <div class="form-group">
-                    <textarea placeholder="Write Your Message"></textarea>
-                  </div>
+                <form
+                  class="contact-form-validated contact-page__form-box"
+                  method="post"
+                  novalidate="novalidate"
+                >
                   <div class="row">
+                    <div class="col-xl-6 col-lg-6 col-md-6">
+                      <div class="input-box">
+                        <input
+                          type="text"
+                          name="name"
+                          placeholder="Name"
+                          required=""
+                          aria-required="true"
+                        />
+                        <div class="icon"><span class="icon-user"></span></div>
+                      </div>
+                    </div>
+                    <div class="col-xl-6 col-lg-6 col-md-6">
+                      <div class="input-box">
+                        <input
+                          type="email"
+                          name="email"
+                          placeholder="Email"
+                          required=""
+                          aria-required="true"
+                        />
+                        <div class="icon"><span class="icon-email"></span></div>
+                      </div>
+                    </div>
+                    <div class="col-xl-6 col-lg-6 col-md-6 mb-4">
+                      <div class="input-box">
+                        <input
+                          type="text"
+                          name="Phone"
+                          placeholder="Phone"
+                          required=""
+                          aria-required="true"
+                        />
+                        <div class="icon">
+                          <span class="icon-telephone-call"></span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-xl-6 col-lg-6 col-md-6 mb-4">
+                      <div class="form-group">
+                        <select name="" id="" class="custom-select-box">
+                          <option value="">Select Issue</option>
+                          <option value="general">General Enquiry</option>
+                          <option value="service">Service Related</option>
+                          <option value="complaint">Complaint</option>
+                          <option value="support">Support Request</option>
+                        </select>
+                      </div>
+                    </div>
+
                     <div class="col-xl-12">
-                      <div class="button-box">
-                        <button
-                          class="thm-btn"
-                          type="submit"
-                          data-loading-text="Please wait..."
-                        >
-                          submit now
+                      <div class="input-box">
+                        <textarea
+                          name="message"
+                          placeholder="Message"
+                        ></textarea>
+                        <div class="icon style2">
+                          <span class="fa fa-pencil"></span>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-xl-12">
+                      <div class="contact-page__form-btn">
+                        <button type="submit" class="thm-btn">
+                          Submit Now
+                          <i class="icon-next"></i>
                           <span class="hover-btn hover-bx"></span>
                           <span class="hover-btn hover-bx2"></span>
                           <span class="hover-btn hover-bx3"></span>
